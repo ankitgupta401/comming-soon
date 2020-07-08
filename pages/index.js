@@ -50,7 +50,7 @@ export default function Home() {
 
   <div className="twelve columns">
       
-      <img src="android-chrome-192x192.png" />
+      <img src="android-chrome-192x192.png" alt='Image' />
     <h1>We are currently working on something awesome. Stay tuned!</h1>
 
     {/* <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
@@ -68,7 +68,7 @@ export default function Home() {
       <div id="mc_embed_signup">
          <form noValidate>
                
-            <input type="email" value={state.email} name="EMAIL" className="email" onChange={(e)=> { setstate({email:e.target.value})}} id="mce-EMAIL" placeholder="email address" required />
+            <input type="email" value={state.email} name="email" className="email" onChange={(e)=> { setstate({email:e.target.value})}} id="mce-EMAIL" placeholder="email address" required />
 
             <div style={{position: "absolute", left: "-5000px"}}><input type="text" name="b_cdb7b577e41181934ed6a6a44_e65110b38d"  /></div>
             
