@@ -67,7 +67,7 @@ export default function Home() {
   
       <div id="mc_embed_signup">
          <form noValidate>
-               <label>
+               <label for="mce-EMAIL">
             <input type="email" value={state.email} name="email" className="email" onChange={(e)=> { setstate({email:e.target.value})}} id="mce-EMAIL" placeholder="email address" required />
             </label>
             <div style={{position: "absolute", left: "-5000px"}}><input type="text" name="b_cdb7b577e41181934ed6a6a44_e65110b38d"  /></div>
