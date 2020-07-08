@@ -78,11 +78,11 @@ export default function Home() {
       </div>
 
       <ul className="social">
-         <li><a href="https://www.facebook.com/99smartphones.in"><i className="fa fa-facebook"></i></a></li>
+         <li><a href="https://www.facebook.com/99smartphones.in" aria-label="facebook_link"><i className="fa fa-facebook"></i></a></li>
          {/* <li><a href="#"><i class="fa fa-twitter"></i></a></li>
          <li><a href="#"><i class="fa fa-google-plus"></i></a></li> */}
          {/* <li><a href="#"><i class="fa fa-linkedin"></i></a></li> */}
-         <li><a href="https://www.instagram.com/99s_martphones/?hl=en"><i className="fa fa-instagram"></i></a></li>
+         <li><a href="https://www.instagram.com/99s_martphones/?hl=en" aria-label="insta_link"><i className="fa fa-instagram"></i></a></li>
          {/* <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
          <li><a href="#"><i class="fa fa-skype"></i></a></li> */}
        </ul>
