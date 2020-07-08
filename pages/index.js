@@ -30,7 +30,7 @@ export default function Home() {
 <meta name="author" content="99smartphones"/>
 
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
 
 <link rel="stylesheet" href="css/default.css"/>
