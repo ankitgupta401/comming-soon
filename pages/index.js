@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     
-    <div className="container">
+    <html lang="en">
      <Head>
 
 
@@ -92,6 +92,6 @@ export default function Home() {
  </div> 
 
 </section> 
-    </div>
+    </html>
   )
 }
