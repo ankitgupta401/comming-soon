@@ -24,10 +24,10 @@ export default function Home() {
      <Head>
 
 
-<meta charset="utf-8"/>
+<meta charSet="utf-8"/>
 <title>99smartphones.in</title>
-<meta name="description" content=""/>
-<meta name="author" content=""/>
+<meta name="description" content="99smartphones comming soon page"/>
+<meta name="author" content="99smartphones"/>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -45,10 +45,12 @@ export default function Home() {
       <section id="intro">
 
    	
-<div  id="main" class="row">
+<div  id="main" className="row">
+
 
   <div className="twelve columns">
       
+      <img src="android-chrome-192x192.png" />
     <h1>We are currently working on something awesome. Stay tuned!</h1>
 
     {/* <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>

@@ -30,7 +30,7 @@ body { background: #0f0f0f; }
    padding-bottom: 102px;   
    min-height: 900px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat center center;
+   background: #161415 url("https://image.freepik.com/free-vector/high-tech-background_23-2148458536.jpg") no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;   
 }
