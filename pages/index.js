@@ -28,7 +28,7 @@ export default function Home() {
 <title>99smartphones.in</title>
 <meta name="description" content="99smartphones comming soon page"/>
 <meta name="author" content="99smartphones"/>
-
+<meta name="google-site-verification" content="We8K8T-425qt2XvSNSocsbnBOqDQLQdElUv8vw8WFQE" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
