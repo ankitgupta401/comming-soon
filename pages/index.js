@@ -36,7 +36,7 @@ export default function Home() {
 
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></link>
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"/>
@@ -99,9 +99,9 @@ export default function Home() {
 
 				<form className="contact100-form validate-form p-t-55 w-full">
 					<div className="wrap-input100 validate-input m-lr-auto-lg" data-validate = "Email is required: ex@abc.xyz">
-						<input className="s2-txt1 placeholder0 input100 trans-04" type="text" onChange={(e) => {setstate({email: e.target.value})}} name="email" placeholder="Email Address"/>
+						<input className="s2-txt1 placeholder0 input100 trans-04" aria-label="Email" type="text" onChange={(e) => {setstate({email: e.target.value})}} name="email" placeholder="Email Address"/>
 
-						<button ria-label="Email Button" type="button" onClick={onEmail(state.email)} className="flex-c-m ab-t-r size4 s1-txt1 hov1 trans-04">
+						<button aria-label="Email Button" type="button" onClick={() => {onEmail(state.email)}} className="flex-c-m ab-t-r size4 s1-txt1 hov1 trans-04">
 							<i className="fa fa-paper-plane fs-15 cl0"></i>
 						</button>
 					</div>		
