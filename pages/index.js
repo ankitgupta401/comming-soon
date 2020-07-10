@@ -139,7 +139,7 @@ export default function Home() {
 					<i className="fa fa-instagram"></i>
 				</a>
 
-				<a href="#" aria-label="youtube_link"  className="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<a href="https://www.youtube.com/channel/UCA8oLlgfXe-F5lv8iTVFlhw/" aria-label="youtube_link"  className="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
 					<i className="fa fa-youtube"></i>
 				</a>
 			</div>
