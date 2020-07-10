@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import {useState} from 'react'
-import fetch from 'node-fetch'
+import Head from 'next/head';
+import {useState} from 'react';
+import fetch from 'node-fetch';
+import Swal from 'sweetalert2';
 export default function Home() {
 
  const [state, setstate] = useState({email:''})
@@ -8,11 +9,16 @@ export default function Home() {
  
      fetch('https://blog.99smartphones.in/api/common/add_subscriber', {
       method: 'post',
-      body: JSON.stringify({email: value})
+      body: {email: value}
     }).then(function(response) {
       return response.json();
     }).then(function(data) {
-      Swal.fire('Success', 'You Have Subscribed To Us', 'success');
+		if(data.code === 0){
+			Swal.fire('Success', 'You Have Subscribed To Us', 'success');
+		} else {
+			Swal.fire('Failed', 'Sorry Try Again Later', 'error');
+		}
+   
     });
   }
 
@@ -36,7 +42,7 @@ export default function Home() {
 
 <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></link>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossOrigin="anonymous"></link>
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>
 
 	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css"/>
