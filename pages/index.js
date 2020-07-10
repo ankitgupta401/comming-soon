@@ -7,7 +7,7 @@ export default function Home() {
 
  const [state, setstate] = useState({email:''})
   const onEmail=(value) => {
- Axios.post("https://blog.99smartphones.in/api/common/add_subscriber", {email: value}).then(res => {
+ Axios.post("https://blog.99smartphones.in/api/common/add_subscriber", {email: value, deleted:false}).then(res => {
 	if(res.data.code === 0){
 		Swal.fire('You Have Subscribed To Us', 'Thank You For Subscription ', 'success');
 	} else {
