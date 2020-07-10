@@ -1,25 +1,20 @@
 import Head from 'next/head';
 import {useState} from 'react';
-import fetch from 'node-fetch';
+
 import Swal from 'sweetalert2';
+import Axios from 'axios';
 export default function Home() {
 
  const [state, setstate] = useState({email:''})
   const onEmail=(value) => {
+ Axios.post("https://blog.99smartphones.in/api/common/add_subscriber", {email: value}).then(res => {
+	if(res.data.code === 0){
+		Swal.fire('You Have Subscribed To Us', 'Thank You For Subscription ', 'success');
+	} else {
+		Swal.fire('Failed To Subscribe', 'Sorry Try Again Later', 'error');
+	}
+ });
  
-     fetch('https://blog.99smartphones.in/api/common/add_subscriber', {
-      method: 'post',
-      body: {email: value}
-    }).then(function(response) {
-      return response.json();
-    }).then(function(data) {
-		if(data.code === 0){
-			Swal.fire('Success', 'You Have Subscribed To Us', 'success');
-		} else {
-			Swal.fire('Failed', 'Sorry Try Again Later', 'error');
-		}
-   
-    });
   }
 
 
