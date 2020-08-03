@@ -136,7 +136,7 @@ export default function Home() {
 					<i className="fa fa-facebook-official"></i>
 				</a>
 
-				<a  href="https://www.instagram.com/99s_martphones/?hl=en" aria-label="insta_link" className="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
+				<a  href="https://www.instagram.com/99smartphones/?hl=en" aria-label="insta_link" className="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-5">
 					<i className="fa fa-instagram"></i>
 				</a>
 
