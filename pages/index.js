@@ -6,7 +6,17 @@ import Axios from 'axios';
 export default function Home() {
 
  const [state, setstate] = useState({email:''})
+ 
+   function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+  }
+ 
   const onEmail=(value) => {
+	  if(!value){
+	  return;
+	  }
+	  if(validateEmail(value)){
  Axios.post("https://blog.99smartphones.in/api/common/add_subscriber", {email: value, deleted:false}).then(res => {
 	if(res.data.code === 0){
 		Swal.fire('You Have Subscribed To Us', 'Thank You For Subscription ', 'success');
@@ -14,6 +24,9 @@ export default function Home() {
 		Swal.fire('Failed To Subscribe', 'Sorry Try Again Later', 'error');
 	}
  });
+	  }else{
+	  Swal.fire("Failed", "Invalid Email", "error");
+	  }
  
   }
 
