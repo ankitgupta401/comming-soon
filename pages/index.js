@@ -88,7 +88,7 @@ export default function Home() {
             <a className="nav-link waves-effect waves-light" href="https://blog.99smartphones.in">Blogs</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link waves-effect waves-light" href="https://blog.99smartphones.in">News</a>
+            <a className="nav-link waves-effect waves-light" href="https://news.99smartphones.in">News</a>
           </li>
       
         </ul>
